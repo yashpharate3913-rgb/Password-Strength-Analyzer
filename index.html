@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Strength Analyzer</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="card">
+
+      <h1>Password Strength Analyzer</h1>
+      <p class="subtitle">Check your password security instantly</p>
+
+      <!-- Password Input -->
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <button id="toggleBtn">👁</button>
+      </div>
+
+      <!-- Strength Bar -->
+      <div class="strength-container">
+        <div class="strength-bar" id="strengthBar"></div>
+      </div>
+
+      <!-- Strength Text -->
+      <p id="strengthText">Password Strength</p>
+
+      <!-- Suggestions -->
+      <div class="suggestions" id="suggestions"></div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button id="generateBtn">Generate Strong Password</button>
+        <button id="copyBtn">Copy Password</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
